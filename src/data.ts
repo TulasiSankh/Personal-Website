@@ -32,7 +32,7 @@ export const profile = {
   company: 'ClickCrawl Media Pvt. Ltd.',
   linkedin: 'https://www.linkedin.com/in/tulasi-sugandhi/',
   github: 'https://github.com/TulasiSankh',
-  email: 'tulasi.sugandhi@gmail.com',
+  email: 'sankhtulasi@gmail.com',
 };
 
 export const navLinks = [
