@@ -1,6 +1,6 @@
 import { projects } from '@/data';
 import Reveal from './Reveal';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Github } from 'lucide-react';
 
 export default function Projects() {
   return (
@@ -15,8 +15,7 @@ export default function Projects() {
               Things I've designed and built
             </h2>
             <p className="mt-4 text-[15px] text-navy-600 leading-relaxed">
-              A selection of projects spanning document management, HR platforms and business
-              applications.
+              A selection of personal and AI-driven projects I've designed and built.
             </p>
           </div>
         </Reveal>
@@ -68,23 +67,36 @@ export default function Projects() {
                         ))}
                       </div>
 
-                      <div className="mt-auto pt-6 flex flex-wrap gap-2">
-                        {project.tech.map((t) => (
-                          <span
-                            key={t}
-                            className={
-                              'px-2.5 py-1 rounded-lg border ' +
-                              project.badgeBg +
-                              ' ' +
-                              project.badgeBorder +
-                              ' ' +
-                              project.badgeText +
-                              ' text-[11px] font-medium backdrop-blur-sm'
-                            }
+                      <div className="mt-auto pt-6">
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/15 border border-white/20 backdrop-blur-sm text-white text-[13px] font-semibold hover:bg-white/25 transition-all mb-4"
                           >
-                            {t}
-                          </span>
-                        ))}
+                            <Github className="w-4 h-4" />
+                            View on GitHub
+                          </a>
+                        )}
+                        <div className="flex flex-wrap gap-2">
+                          {project.tech.map((t) => (
+                            <span
+                              key={t}
+                              className={
+                                'px-2.5 py-1 rounded-lg border ' +
+                                project.badgeBg +
+                                ' ' +
+                                project.badgeBorder +
+                                ' ' +
+                                project.badgeText +
+                                ' text-[11px] font-medium backdrop-blur-sm'
+                              }
+                            >
+                              {t}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -117,23 +129,36 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  <div className="mt-4 pt-4 border-t border-navy-100 flex flex-wrap gap-1.5">
-                    {project.tech.map((t) => (
-                      <span
-                        key={t}
-                        className={
-                          'px-2 py-0.5 rounded-md border ' +
-                          project.badgeBg +
-                          ' ' +
-                          project.badgeBorder +
-                          ' ' +
-                          project.badgeText +
-                          ' text-[11px] font-medium'
-                        }
+                  <div className="mt-4 pt-4 border-t border-navy-100">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-navy-200 text-navy-700 text-[12px] font-semibold hover:border-brand-300 hover:text-brand-700 hover:bg-brand-50 transition-all mb-3"
                       >
-                        {t}
-                      </span>
-                    ))}
+                        <Github className="w-3.5 h-3.5" />
+                        View on GitHub
+                      </a>
+                    )}
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.tech.map((t) => (
+                        <span
+                          key={t}
+                          className={
+                            'px-2 py-0.5 rounded-md border ' +
+                            project.badgeBg +
+                            ' ' +
+                            project.badgeBorder +
+                            ' ' +
+                            project.badgeText +
+                            ' text-[11px] font-medium'
+                          }
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </Reveal>
