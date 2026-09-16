@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-navy-100 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[12px] text-navy-400">
-            (c) {new Date().getFullYear()} {profile.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
           </p>
           <p className="text-[12px] text-navy-400">
             Built with React, TypeScript & Tailwind CSS

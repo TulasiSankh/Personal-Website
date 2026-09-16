@@ -1,4 +1,4 @@
-import { ArrowRight, FileDown, MapPin, Sparkles, Code2, Server, Database, GitBranch, Zap } from 'lucide-react';
+import { ArrowRight, MapPin, Sparkles, Code2, Server, Database, Github } from 'lucide-react';
 import { profile, heroTechBadges } from '@/data';
 
 export default function Hero() {
@@ -49,15 +49,24 @@ export default function Hero() {
                 onClick={() => scrollTo('#projects')}
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-navy-900 text-white text-[14px] font-semibold hover:bg-navy-800 transition-all shadow-soft hover:shadow-lift group"
               >
-                View My Projects
+                View Projects
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </button>
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-navy-800 text-[14px] font-semibold border border-navy-200 hover:border-navy-300 hover:bg-navy-50 transition-all shadow-soft group"
+              >
+                <Github className="w-4 h-4" />
+                View GitHub
+              </a>
               <button
                 onClick={() => scrollTo('#contact')}
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-navy-800 text-[14px] font-semibold border border-navy-200 hover:border-navy-300 hover:bg-navy-50 transition-all shadow-soft"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-transparent text-brand-700 text-[14px] font-semibold border border-brand-200 hover:bg-brand-50 transition-all"
               >
-                <FileDown className="w-4 h-4" />
-                Download Resume
+                Contact Me
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </button>
             </div>
 

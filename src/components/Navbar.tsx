@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Github, Linkedin, FileDown, Menu, X, Terminal } from 'lucide-react';
+import { Github, Linkedin, Menu, X, Terminal } from 'lucide-react';
 import { navLinks, profile } from '@/data';
 
 export default function Navbar() {
@@ -96,18 +96,6 @@ export default function Navbar() {
             >
               <Linkedin className="w-4 h-4" />
             </a>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('#contact');
-              }}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-navy-900 text-white text-[13px] font-medium hover:bg-navy-800 transition-all shadow-soft hover:shadow-lift"
-            >
-              <FileDown className="w-3.5 h-3.5" />
-              Resume
-            </a>
-
             {/* Mobile toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -158,7 +146,7 @@ export default function Navbar() {
                 }}
                 className="mt-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-lg bg-navy-900 text-white text-[13px] font-medium"
               >
-                <FileDown className="w-4 h-4" /> Download Resume
+                Contact Me
               </a>
             </div>
           </div>

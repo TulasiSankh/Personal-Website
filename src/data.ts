@@ -127,7 +127,7 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Database,
     name: 'Databases',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server'],
+    skills: ['PostgreSQL', 'MySQL', 'SQL Server', 'MongoDB'],
     theme: 'navy',
   },
   {
@@ -138,8 +138,8 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     icon: Sparkles,
-    name: 'Learning',
-    skills: ['MongoDB', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Data Warehousing'],
+    name: 'AI / Emerging',
+    skills: ['AI integrations', 'Embeddings', 'RAG', 'Generative AI', 'AI application development'],
     theme: 'amber',
   },
 ];

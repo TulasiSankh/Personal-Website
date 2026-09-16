@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tulasi-sugandhi-port-7iu2.bolt.host/sitemap.xml

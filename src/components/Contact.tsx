@@ -1,6 +1,6 @@
 import { profile } from '@/data';
 import Reveal from './Reveal';
-import { Mail, Github, Linkedin, MapPin, ArrowRight, FileDown } from 'lucide-react';
+import { Mail, Github, Linkedin, MapPin, ArrowRight } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -54,15 +54,13 @@ export default function Contact() {
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                     </a>
                     <a
-                      href="#home"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' });
-                      }}
+                      href={profile.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-[14px] font-semibold hover:bg-white/15 transition-all"
                     >
-                      <FileDown className="w-4 h-4" />
-                      Download Resume
+                      <Github className="w-4 h-4" />
+                      View GitHub
                     </a>
                   </div>
                 </div>
