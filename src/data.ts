@@ -31,7 +31,7 @@ export const profile = {
   location: 'Bengaluru, Karnataka, India',
   company: 'ClickCrawl Media Pvt. Ltd.',
   linkedin: 'https://www.linkedin.com/in/tulasi-sugandhi/',
-  github: 'https://github.com/TulasiSank',
+  github: 'https://github.com/TulasiSankh',
   email: 'tulasi.sugandhi@gmail.com',
 };
 

@@ -80,7 +80,7 @@ export default function Contact() {
                     href={profile.github}
                     icon={<Github className="w-5 h-5 text-brand-400" />}
                     label="GitHub"
-                    value="@TulasiSank"
+                    value="@TulasiSankh"
                     description="Code, projects & contributions"
                   />
                   <SocialCard
